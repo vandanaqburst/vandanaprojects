@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#D5E2C9">
+
+<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><div class="logo"><strong>LOGO</strong></div></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <nav>
+              <ul>          
+                <li><a href="indexcon.html">Contact Us</a></li>
+                <li><a href="#" class="topopup">Login form</a></li>
+                <li><a href="indexreg.html">Registration Form</a></li>
+                <li class="unselected"><a href="indexabt.html">About Us</a></li>
+                <li class="selected"><a href="index.html">Home</a></li>
+              </ul>
+          </nav>
+        </div><!--/.nav-collapse -->
+        </div>
+        </div>
+    </div>
+
+
+<div class="wrapper-body" id="about">
+  <div class="container">
+    <div class="row">
+    <div class="who">
+      <div class="col-sm-3 col-sm-offset-1">
+        <div class="whoweare">
+          <img src="images/whoweare.png" class="img-responsive" >
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="whoweare2">
+         <h1>Who We Are</h1>
+      <p>Add a description about the company.Lorem  ipsum  dolor  sit  amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="why">
+      <div class="col-sm-3 col-sm-offset-1">
+        <div class="whymsand">
+          <img src="images/why.png" class="img-responsive" >
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="whymsand2">
+        <h1>Why to choose us</h1>
+      <p>Add a description about the product.Lorem  ipsum  dolor  sit  amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="contactus">
+    <div id="toPopup">       
+          <div class="close"></div>
+          <span class="ecs_tooltip">Press Esc to close <span class="arrow"></span></span>
+        <div id="popup_content"> <!--your content start-->
+                    <h1>Login Form</h1>
+                    <form_1 name="loginForm">
+                    Email id <input type="email" name="email" id="Emailid" placeholder="Email id"><br><br>
+                    Password <input type="password" name="password" id="Password" maxlength="6" placeholder="Password"><br><br>
+                    <input type="submit" value="Submit"  onclick="onSubmit()">
+                    <input type="reset" value="Clear All" >
+                    </form_1>
+        </div> <!--your content end-->
+    
+    </div> <!--toPopup end-->
+</div>
+<div class="loader"></div>
+<div id="backgroundPopup"></div>
+
+<div class="footer" style="margin-top: 150px;">
+  <p> &#169; 2014 Interactive Donor Corp.</p>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"> </script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

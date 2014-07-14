@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<nav>
+    <ul>
+      <li class="selected"><a href="index.html">Home</a></li>
+      <li class="unselected"><a href="indexabt.html">About Us</a>
+        <ul>
+            <li><a href="indexhis.html">History</a></li>
+            <li><a href="#">Achivements</a></li>
+            <li><a href="#">Our clients</a></li>
+        </ul>
+      </li>
+      <li><a href="indexreg.html">Registration Form</a>
+      </li> 
+      <li><a href="#" class="topopup">Login form</a>        
+      <li><a href="indexcon.html">Contact Us</a>
+      </li>
+    </ul>
+</nav>
+<div class="aboutUs">
+      <div class="descriptionone">
+        <h1>Who We Are</h1>
+        <p>Add a description about the company.Lorem  ipsum  dolor  sit  amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
+      </div>
+    </div>
+
+<div class="contactus">
+    <div id="toPopup">       
+          <div class="close"></div>
+          <span class="ecs_tooltip">Press Esc to close <span class="arrow"></span></span>
+        <div id="popup_content"> <!--your content start-->
+                    <h1>Login Form</h1>
+                    <form_1 name="loginForm">
+                    Email id <input type="email" name="email" id="Emailid" placeholder="Email id"><br><br>
+                    Password <input type="password" name="password" id="Password" maxlength="6" placeholder="Password"><br><br>
+                    <input type="submit" value="Submit"  onclick="onSubmit()">
+                    <input type="reset" value="Clear All" >
+                    </form_1>
+        </div> <!--your content end-->
+    
+    </div> <!--toPopup end-->
+</div>
+<div class="loader"></div>
+<div id="backgroundPopup"></div>
+
+<div class="footer" style="margin-top: 400px;">
+  <p> &#169; 2014 Interactive Donor Corp.</p>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"> </script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

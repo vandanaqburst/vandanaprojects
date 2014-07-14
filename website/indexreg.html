@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#D5E2C9">
+<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><div class="logo"><strong>LOGO</strong></div></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <nav>
+              <ul>          
+                <li><a href="indexcon.html">Contact Us</a></li>
+                <li><a href="#" class="topopup">Login form</a></li>
+                <li><a href="indexreg.html">Registration Form</a></li>
+                <li class="unselected"><a href="indexabt.html">About Us</a></li>
+                <li class="selected"><a href="index.html">Home</a></li>
+              </ul>
+          </nav>
+        </div><!--/.nav-collapse -->
+        </div>
+        </div>
+    </div>
+
+<div class="wrapper-body" id="about">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+          <form method="post" action="" enctype="multipart/form-data" onsubmit="checkform();">
+            <ul class="errorMessages"></ul>
+            <div class="regForm">
+              <h1>Login to Qburst Mail</h1>
+                <div class="regFormi">
+                    Name <input type="text" name="" id="name" placeholder="Name" required><br><br>
+                    
+                    Address <input type="text" name="" id="addrs" placeholder="Address" required><br><br>
+                    
+                    <input type="radio" id="sexm" name="sex" value="male" required>Male<br>
+                    <input type="radio" id="sexm" name="sex" value="female">Female<br><br>
+                    
+                    Your phonenumber <input type='tel' id="phnum" pattern="[0-9]{10,10}" class="search" name="number"  autocomplete="off"  maxlength="10" placeholder="Phone number" required><br><br>
+                    
+                    <input type="checkbox" name="" id="lang" value="" required> English
+                    <input type="checkbox" name="" id="" value=""> Hindi<br><br>
+                    
+                    <strong>Account details</strong><br><br>
+                    Card type: <select id="card" onchange="comboOnChange(this);">
+                    <option value="select">Select</option>
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="Maestro">Maestro</option>
+                    <option value="American Express">American Express</option>
+                    </select><br><br>
+                    Card Number <input type="text" name="cardNum" id="cardNum" placeholder="Name" required><br><br>
+                    Security# <input type="text" name="" id="secur" placeholder="Key" required><br><br>
+
+                    Expires on: <select id="month">
+                      <option>Month</option>
+                      <option>Jan</option>
+                      <option>Feb</option>
+                      <option>Mar</option>
+                      <option>Apr</option>
+                      <option>May</option>
+                      <option>Jun</option>
+                      <option>Jul</option>
+                      <option>Aug</option>
+                      <option>Sep</option>
+                      <option>Oct</option>
+                      <option>Nov</option>
+                      <option>Dec</option>
+                    </select>
+
+                      <select id="dates">
+                        <option>Date</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                      </select>
+                      <select id="year">
+                        <option>Year</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                      </select><br><br>
+                    <input type="submit" id="subMit" value="Sign in"  onclick="onSubmit()">
+                </div>
+            </div>
+          </form>​
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="contactus">
+    <div id="toPopup">       
+          <div class="close"></div>
+          <span class="ecs_tooltip">Press Esc to close <span class="arrow"></span></span>
+        <div id="popup_content"> <!--your content start-->
+                    <h1>Login Form</h1>
+                    <form_1 name="loginForm">
+                    Email id <input type="email" name="email" id="Emailid" placeholder="Email id"><br><br>
+                    Password <input type="password" name="password" id="Password" maxlength="6" placeholder="Password"><br><br>
+                    <input type="submit" value="Submit"  onclick="onSubmit()">
+                    <input type="reset" value="Clear All" >
+                    </form_1>
+        </div> <!--your content end-->
+    
+    </div> <!--toPopup end-->
+</div>
+<div class="loader"></div>
+<div id="backgroundPopup"></div>
+
+<div class="footer" style="margin-top: 40px;">
+  <p> &#169; 2014 Interactive Donor Corp.</p>
+</div>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"> </script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
