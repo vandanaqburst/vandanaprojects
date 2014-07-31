@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'OpenSansBold';
+    font-style: normal;
+    font-weight: normal;
+    src:url('assets/fonts/Open Sans/OpenSans-Bold.ttf');
+}
+#firstScreen {
+	background: url(images/bg.jpg) 50% 0 no-repeat fixed; min-height: 1000px;
+	height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+
+}
+
+#secScreen {
+	background: url(images/bg1.jpg) 50% 0 no-repeat fixed; min-height: 650px;
+	height: 650px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#thirdScreen {
+	background: url(images/bg2.jpg) 50% 0 no-repeat fixed; min-height: 680px;
+	height: 680px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#forthScreen {
+	background: url(images/bg3.jpg) 50% 0 no-repeat fixed; min-height: 1000px;
+	height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#firstScreen article, #forthScreen article {
+	font-family: 'OpenSansBold';
+	font-size: 50px;
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 200px;
+	width: 100%;
+}
+
+#secScreen article ,#thirdScreen article {
+	color: #fff;
+	font-family: 'OpenSansBold';
+	font-size: 50px;
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 250px;
+	width: 100%;
+}
+
+.boxes div {
+    display: none;
+}
+
+#fadeMenu {
+	background: #44474B;
+	display: none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
+}
+
+nav {
+  height:30px;
+  width: 1150px;
+  margin-left: 70px;
+} 
+
+nav ul { 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+nav ul li {
+  display: block;
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  margin-top: 3px;
+}
+
+nav li ul {
+  display: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  border-width: thin;
+  padding: 15px 20px 0px 0px;
+  color: #ffffff; 
+  white-space: nowrap;
+  height:30px;
+  text-align:center;
+  font-family: calibri;
+  font-size: 16px;
+}
+ 
+nav ul li a:hover {
+  background: #636363;
+}
+ 
+nav li:hover ul {
+  display: block;
+  position: absolute;
+  height:30px;
+}
+ 
+nav li:hover li {
+  float: none;
+  font-size: 11px;
+}
+ 
+nav li:hover a {
+  background: #636363;
+}
+ 
+nav li:hover li a:hover {
+  background: #636363; 
+}
+
+.boxes {
+	font-size: 28px;
+}
+
+ h2 {
+	font-size: 23px;
+}
+
+ p {
+	font-size: 20px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.content2 {
+	height: 350px;
+	background-color: #fff;
+	margin-top: -220px;
+}
+.content {
+	margin-top: -170px;
+	
+}

@@ -1,0 +1,45 @@
+<html>
+<head>
+<style type="text/css">
+ div#someOtherId span {
+  cursor: pointer;
+  text-decoration: underline;
+  }
+</style>
+<script type="text/javascript" language="javascript">
+function changeCode( id )
+{
+ document.getElementById( "comText" ).innerHTML = document.getElementById( "content" + id ).innerHTML;
+}
+</script>
+</head>
+<body>
+<div id="someOtherId">
+<ul>
+ <li class="ul"> <span onMouseover="changeCode(1)">link1</span> </li>
+ <li class="ul"> <span onMouseover="changeCode(2)">link2</span> </li>
+ <li class="ul"> <span onMouseover="changeCode(3)">link3</span> </li>
+ <li class="ul"> <span onMouseover="changeCode(4)">link4</span> </li>
+ <li class="ul"> <span onMouseover="changeCode(5)">link5</span> </li>
+<ul>
+</div>
+<div id="ComText">blah blahh</div>
+<div style="display:none">
+ <div id="content1">
+  This is some <b>content</b>
+ </div>
+ <div id="content2">
+  <p>This <em>is</em> some more content.
+ </div>
+ <div id="content3">
+  Wheehee, number three!
+ </div>
+ <div id="content4">
+  Ok, I'm running out of things to say
+ </div>
+ <div id="content5">
+  Ok, now I'm really out, and done! <b>Yay!</b>
+ </div>
+</div>
+</body>
+</html>
