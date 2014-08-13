@@ -1,0 +1,66 @@
+
+	    [
+	      { 
+	      	"id": "1",
+	      	"class": "web",
+	         "name": "Project1",
+		     "url": "images/pf-1.jpg",
+		     "details":"When creating computer games it is necessary to use extensive documentation so that everybody involved in the creative process is up to date. This paper has investigated what prospects there are to improve the GDD process to a more updated version."
+	      },
+	      {
+	      	"id": "2",
+	      	"class": "mobileDesign",
+	         "name": "Project2",
+	         "url": "images/pf-2.jpg",
+	         "details":"The study demonstrates the suitability, flexibility and efficiency of applying constraint programming for an automatic generation of schedules for physicians. Constraint programming is about assigning values to a number of variables"
+	      },
+	      { 
+	      	"id": "3",
+	      	"class": "web",
+	         "name": "Project3",
+	         "url": "images/pf-3.jpg",
+	         "details":"Millions of slide presentations are being authored and delivered with computer software every day. Yet much of the computer’s power for these tasks remains untapped. Existing interaction techniques leave presenters wrestling"
+	      },
+	      { 
+	      	"id": "4",
+	      	"class": "mobileDesign",
+	         "name": "Project4",
+	         "url": "images/pf-4.jpg",
+	         "details":"To be able to run a flight simulator a large area of terrain needs to be visualized. The simulator must update the screen in real-time to make the simulation work well."
+	      },
+	      { 
+	      	"id": "5",
+	      	"class": "web",
+	         "name": "Project5",
+	         "url": "images/pf-5.jpg",
+	         "details":"The study demonstrates the suitability, flexibility and efficiency of applying constraint programming for an automatic generation of schedules for physicians. Constraint programming is about assigning values to a number of variables"
+	      },
+	      { 
+	      	"id": "6",
+	      	"class": "mobileDesign",
+	         "name": "Project6",
+	         "url": "images/pf-6.jpg",
+	         "details":"This paper contains a study attempting to answer the differences in East-West attitudes towards integrated communication tools. "
+	      },
+	      { 
+	      	"id": "7",
+	      	"class": "web",
+	         "name": "Project7",
+	         "url": "images/pf-7.jpg",
+	         "details":"We present a concept for using procedural techniques to represent media. Procedural methods allow us to represent digital media (2D images, 3D environments etc.) with very little information."
+	      },
+	      { 
+	      	"id": "8",
+	      	"class": "mobileDesign",
+	         "name": "Project8",
+	         "url": "images/pf-8.jpg",
+	         "details":"The goal of this study is to explore how the HMI of a process control system can be improved by applying modern interaction technologies."
+	      }, 
+	      { 
+	      	"id": "9",
+	      	"class": "web",
+	         "name": "Project9",
+	         "url": "images/pf-9.jpg",
+	         "details":"The usage of automatic fingerprint identification systems as a means of identification and/or verification have increased substantially during the last couple of years."
+	      }
+	  ]
