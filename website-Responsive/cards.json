@@ -1,0 +1,38 @@
+[
+	{
+		"cardtype" : "Visa",
+		"CardNumber" : "012345678912",
+		"Security" : "1234",
+		"Expiresonmonth" : "Mar",
+		"Expiresondate" : "13",
+		"Expiresonyear" : "2014"				
+
+	},
+	{
+		"cardtype" : "MasterCard",
+		"CardNumber" : "448918398010",
+		"Security" : "3333",
+		"Expiresonmonth" : "Feb",
+		"Expiresondate" : "15",
+		"Expiresonyear" : "2015"
+
+	},
+	{
+		"cardtype" : "Maestro",
+		"CardNumber" : "891390130090",
+		"Security" : "4444",
+		"Expiresonmonth" : "Jan",
+		"Expiresondate" : "14",
+		"Expiresonyear" : "2013"
+
+	},
+	{
+		"cardtype" : "American Express",
+		"CardNumber" : "190973700978",
+		"Security" : "1111",
+		"Expiresonmonth" : "Apr",
+		"Expiresondate" : "12",
+		"Expiresonyear" : "2016"
+
+	}
+]
