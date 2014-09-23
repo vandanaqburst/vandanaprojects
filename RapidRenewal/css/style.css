@@ -1,0 +1,702 @@
+*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		font: 12px "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+		color: #111;
+	}
+
+/*rapidrenewel*/
+	.content-holder{
+		max-width: 825px;
+		background-color: rgb(239, 239, 239);
+		margin: 50px 20px 0 20px;
+	}
+	.renew-text {
+		padding: 5px;
+		font-size: 12px;
+		font-weight: bold;
+		border-bottom: 2px solid #ffffff;
+	}
+	.content-holder input {
+		border: none;
+		height: 28px;
+		cursor: pointer;
+		border-radius: 4px;
+	}
+	.search,
+	.cancel,
+	.memberdetails {
+		width: 75px;
+		border-radius: 4px;
+		border: none;
+		box-shadow: none;
+		font-weight: bold;
+	}
+	input#member-id{
+		height: 27px;
+		width: 64%;
+		border: 1px solid #ccc;
+	}
+	.member-details{
+		min-height: 400px;
+		overflow-y: scroll;
+		border: 1px solid #CCCCCC;
+		margin-top: 10px;
+		border-radius: 3px;
+		background-color: #ffffff;
+		margin-left: 2%;
+		width: 96%;
+		height: 400px;
+	}
+	.member-details table {
+		padding-top: 10px;
+		padding-left: 5px;
+	}
+	#selected-mode{
+		width: 100%;
+		height: 28px;
+	}
+	.renew-section label {
+		font-size: 12px;
+	}
+	.renewing-text{
+		visibility: hidden;
+	}
+	.membership-info form {
+		margin-top: 10px;
+		padding-left: 12px;
+	}
+	.close {
+		float: right;
+		width: 85px;
+		border-radius: 3px;
+		font-weight: bold;
+		margin: 10px 60px 10px 0;
+	}
+	.renew {
+		margin-left: 5%;
+		width: 115px;
+		font-weight: bold;
+		margin-top:5px;
+	}
+	.renew-section {
+		float: left;
+		width: 96%;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		margin-left: 2%;
+		height: 37px;
+		background-color: #ffffff;
+	}
+	.renew-section p {
+		float: left;
+		width: 32%;
+		margin-top: 9px;
+		margin-left: 10px;
+	}
+	.bgPrimary {
+		color: #FFCC66; 
+		background-color: #003300;
+	}
+	.cGray{
+		background-color: #CCCCCC; 
+		color: #003300;
+	}
+	.renew-membership{
+		float: left;
+		width: 100%;
+		background-color: #f7f7f7;
+	}
+	#batch-selection {
+		width: 25%;
+    	height: 28px;
+	 }
+	 .search-set {
+	 	float: left;
+		width: 98.2%;
+		padding: 10px 5px;
+		margin-left: 2.5px;
+		margin-top: 1px;
+	 }
+	 .id-info {
+	 	cursor: pointer;
+		padding: 5px 24px;
+		float: left;
+	 }
+	 .display-name {
+	 	float: left;
+		width: 30%;
+		margin-left: 10px;
+	 }
+	 #terms-text {
+	 	clear: left;
+		float: left;
+		margin-top: 5px;
+		margin-left: 13px;
+		width: 50px;
+	 }
+	 #selected-registry{
+	 	float: left;
+		margin-top: 4px;
+		width: 31%;
+		height: 28px;
+	 }
+	 #selected-method{
+	 	float: left;
+		margin-top: 4px;
+		width: 18%;
+		height: 28px;
+		margin-left: 5px;
+	 }
+	 #recruter-text {
+	 	float: left;
+		margin-left: 50px;
+		margin-top: 6px;
+	 }
+	 .content-holder input.recruiter-id {
+	 	margin-top: 1px;
+		border: 1px solid #c7c7c7;
+		width: 83px;
+		height: 26px;
+		margin-left: 3px;
+	 }
+	 .recruiter-filed {
+	 	float: left;
+		width: 40%;
+		background-color: #fff;
+		height: 30px;
+		margin-top: 3px;
+		margin-left: 5px;
+	 }
+	 .recruiter-filed a {
+	 	text-decoration: none;
+	 	margin-left: 15px;
+		color: #111;
+	 }
+	 .recruiter-filed a:hover {
+	 	text-decoration: underline;
+	 }
+	 #expiry-label {
+	 	float: left;
+		width: 22%;
+	 }
+	 #status-label {
+	 	float: left;
+		width: 12%;
+	 }
+	 #terms-text,#dues-label {
+	 	float: left;
+	 }
+	 .error {
+	 	display: none;
+	 	text-align: center;
+		padding-top: 8px;
+		color: red;
+	 }
+	 th,td {
+	 	width: auto;
+	 }
+	 .UserWrapper {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	#campaign_table_wrap { 
+		border: 1px solid #c9c9c9;
+		float: left;
+	    width: 100%;
+	}
+	#campaign_table {
+		float: left;
+		max-height: 262px;
+		min-height: 495px;
+/*		min-width: 839px;*/
+		background-color: #f0f0f0;
+		overflow-x: scroll; 
+	}
+
+	.confirm {
+		width: 59px;
+		font-weight: bold;
+		visibility: hidden;
+	}
+
+/*recruitersearch*/     
+    #holder{
+        position: absolute;
+        z-index: 1000;
+        left: 36px;
+    }
+    #box {
+        background-color: gray;
+        border: 1px solid black;
+        height: 529px;
+        width: 400px;
+        position: relative;
+        float: left;
+        border-radius: 3px;
+        display: none;
+    }
+    .scroll_form input {
+        width: 65%;
+        height: 20px;
+        margin-bottom: 5px;
+    }
+    .scroll_form label {
+        clear: left;
+        float: left;
+        width: 19%;
+        text-align: right;
+        padding-right: 6px;
+	}
+	.scroll_form select {
+	    width: 66%;
+	    height: 26px;
+	    margin-bottom: 5px;
+	}
+	#contact-search{
+	    width: 98%;
+	    height: 28px;
+	    background-color: #9fba0e;
+	    border: none;
+	    border-radius: 2px;
+	    margin-left: 4px;
+	    margin-top: 30px
+	}
+	#contact_search {
+	    background-color: #9fba0e;
+	    float: left;
+	    text-align: center;
+	    padding-left: 3px;
+	    padding-right: 15px;
+	    cursor: pointer;
+	    height: 531px;
+	}
+	.UserWrapper form {
+	    margin-top: -16px;
+	    background-color: #fff;
+	    height: 400px;
+	}
+	.UserWrapper form p {
+	    border-bottom: 1px solid #111111;
+		padding-left: 20px;
+		padding-top: 6px;
+		padding-bottom: 7px;
+		background-color: #d6d6d6;
+		margin-top: 16px;
+	 }
+	 #contact_search p {
+	  	float: left;
+		width: 2px;
+		word-wrap: break-word;
+		margin-left: 3px;
+		margin-top: 25px;
+	 }
+	#clear-search {
+	    width: 98%;
+	    height: 30px;
+	    margin-left: 4px;
+	}
+	.search-table {
+	    margin: 0 auto;
+	    max-width: 800px;
+	    display: block;
+	    padding-top: 33px;
+	}
+	 .search-table thead {
+	    background-color: #111;
+	    color: #fff;
+	 }
+	 .search-table table {
+	    border-collapse: collapse;
+	 }
+	 .dataTables_length {
+	 	display: none;
+	 }
+	 .wrap-table {	 
+		margin-left: 20px;
+	 }
+	 .green-text {
+	 	color: #9fba0e;
+	 	font-size: 15px;
+	 	margin-bottom: 15px;
+	 }
+	 .recruiter-search{
+	 	width: 75%;
+		margin-left: 2%;
+		float: left;
+		background-color: #edeff0;
+		margin-top: 50px;
+	 }
+	 .recruiter-text {
+	 	margin-left: 10px;
+		margin-top: 5px;
+	 }
+	 .select-id {
+	 	background-color: #c7c7c7;
+		padding: 5px;
+	 }
+	 .form_button {
+	    margin-top: 25px;
+	 }
+	 .scroll_form {
+	    margin-top: 20px;
+	    margin-left: 10px;
+	 }
+	 #campaign_table th {
+	 	white-space: pre-wrap;
+/*	 	height: 30px;
+*/	 	/*word-break: break-all;*/
+	 }
+	 .dataTables_scrollBody {
+	 	border: none;
+	 }
+
+
+/*renewelconfirmation*/
+	#renew-list th,.header-holder {
+		background-color: #3a8104;
+		border: none;
+		padding: 5px 0;
+	}
+	#renew-list td {
+		border: none;
+		padding: 3px 10px;
+	}
+	#renew-list table{
+		border-collapse: collapse;
+		text-align: left;
+	}
+	.header-holder  th {
+		padding-right: 5px;
+		font-weight: normal;
+		padding-left: 5px;
+	}
+	.price-row {
+		width: 13%;
+	}
+	.price-row select {
+		width: 100%;
+		height: 28px;
+	}
+	#renew-list td.id-info {
+		margin-top: 5px;
+		width: 53px;
+	}
+	#table-renewal input {
+		border: 1px solid #c7c7c7;
+		width: 100%;
+	}
+	#table-renewal {
+		overflow: auto;
+	}
+	.renew-content{
+		float: left;
+		width: 100%;
+		background-color: rgb(239, 239, 239);
+		padding-top: 20px;
+		padding-bottom: 13px;
+	}
+	.renew-content .renewing-text {
+		visibility: visible;
+		float: left;
+		margin-left: 11px;
+		width: 20%;
+	}
+	.totaldues-label {
+		float: left;
+		width: 14%;
+	}
+	.renew-btn,.cancel-btn {
+		width: 85px;
+	}
+	.cancel-btn {
+		margin-left: 10px;
+	}
+	.wrap-buttons {
+		float: right;
+		margin-right: 10px;
+	}
+
+/*transaction page*/
+	.transaction-wrapper {
+      font:normal 13px Arial, Sans-Serif;
+      margin-top: 10px;
+    }
+    .transac-left {
+      display: inline-block;
+      width: 30%;
+      margin-top: 0px;
+      vertical-align: top;
+      margin-left: 15px;
+    }
+    .transac-right {
+      display: inline-block;
+      width: 30%;
+      text-align: left;
+      margin-left: 15px;
+      margin-top: 10px;
+    }
+    .paysource {
+      margin-left: 30px;
+      margin-bottom: 5px;
+    }
+    .payment {
+      margin-left: 43px;
+      margin-bottom: 5px;
+    }
+    .trans-selectbox {
+      margin-top:5px; 
+      text-align: left;
+      border-bottom: 3px solid #000;
+    }
+    .transac-right h1 {
+     font-size: 19px;
+    }
+    .transac-right h2 {
+      font-size: 19px;
+    }
+    .transac-right p {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0;
+      margin-top: -7px;
+      padding: 0;
+    }
+    .transaction-amt {
+      border-bottom: 3px solid #000;
+      margin-top: 40px;
+    }
+    .transaction-due {
+      margin-top: 10px;
+    }
+    .transaction-due p {
+      margin-bottom: 0px;
+    }
+    .transaction-due h2 {
+    	margin-top: 25px;
+    }
+    .note textarea{
+      height: 189px;
+      width: 100%;
+      -webkit-box-shadow: inset 1.3px 1.3px 1.3px 0px #b6b6b6;
+      -moz-box-shadow: inset 1.3px 1.3px 1.3px 0px #b6b6b6;
+      box-shadow: inset 1.3px 1.3px 1.3px 0px #b6b6b6;   
+      border: 1.3px solid #686868;
+      border-radius: 3px;
+    }
+    .currentbatch-selectbox button{
+      height: 28px;
+      width: 100%;
+      margin: 0px 0px 7px 0px;
+      padding: 0px;
+      float: left;
+    }
+    .currentbatch-selectbox button {
+      border:1px solid #cacaca; border-top: none;
+      -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px; text-decoration:none; display:inline-block; color: #000;
+      background: #f5f5f5;
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxNSUiIHN0b3AtY29sb3I9IiNmNWY1ZjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYzRjNGM0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+      background: -moz-linear-gradient(top, #f5f5f5 15%, #c4c4c4 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(15%,#f5f5f5), color-stop(100%,#c4c4c4));
+      background: -webkit-linear-gradient(top, #f5f5f5 15%,#c4c4c4 100%);
+      background: -o-linear-gradient(top, #f5f5f5 15%,#c4c4c4 100%);
+      background: -ms-linear-gradient(top, #f5f5f5 15%,#c4c4c4 100%);
+      background: linear-gradient(to bottom, #f5f5f5 15%,#c4c4c4 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#c4c4c4',GradientType=0 );
+    }
+    .currentbatch-selectbox button:hover{
+      background: #f5f5f5;
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI0NSUiIHN0b3AtY29sb3I9IiNmNWY1ZjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZGNkY2RjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+      background: -moz-linear-gradient(top, #f5f5f5 45%, #dcdcdc 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(45%,#f5f5f5), color-stop(100%,#dcdcdc));
+      background: -webkit-linear-gradient(top, #f5f5f5 45%,#dcdcdc 100%);
+      background: -o-linear-gradient(top, #f5f5f5 45%,#dcdcdc 100%);
+      background: -ms-linear-gradient(top, #f5f5f5 45%,#dcdcdc 100%);
+      background: linear-gradient(to bottom, #f5f5f5 45%,#dcdcdc 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#dcdcdc',GradientType=0 );
+    }
+    .paynowButton button {
+      background: #9fba0e;
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzlmYmEwZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIzJSIgc3RvcC1jb2xvcj0iIzlmYmEwZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjczJSIgc3RvcC1jb2xvcj0iIzZkOTYwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMSUiIHN0b3AtY29sb3I9IiM2ZDk2MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(top, #9fba0e 0%, #9fba0e 23%, #6d9600 73%, #6d9600 101%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9fba0e), color-stop(23%,#9fba0e), color-stop(73%,#6d9600), color-stop(101%,#6d9600));
+      background: -webkit-linear-gradient(top, #9fba0e 0%,#9fba0e 23%,#6d9600 73%,#6d9600 101%);
+      background: -o-linear-gradient(top, #9fba0e 0%,#9fba0e 23%,#6d9600 73%,#6d9600 101%);
+      background: -ms-linear-gradient(top, #9fba0e 0%,#9fba0e 23%,#6d9600 73%,#6d9600 101%);
+      background: linear-gradient(to bottom, #9fba0e 0%,#9fba0e 23%,#6d9600 73%,#6d9600 101%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9fba0e', endColorstr='#6d9600',GradientType=0 );
+    }
+    .amount-dis {
+      float: right;
+    }
+    .amount-due {
+      float: right;
+    }
+    .amount-total {
+      float: right;
+    }
+    .paysourceselect {
+      width: 51%;
+    }
+    .paymentselectbox {
+      width: 53%;
+    }
+    .currentbatchselect {
+      margin-top: 5px;
+      width: 60%;
+    }
+     #discount {
+    	margin-left: 22px;
+    }
+    #totaldue {
+    	margin-left: 20px;
+    }
+/*table creation */
+	.UserWrapper {
+		 margin-bottom: 40px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 15px;
+	    max-width: 900px;
+	}
+	.filter {
+		display: inline-block;
+		width: 45%;
+		font-family: 'Josefin-Sans', Arial;
+		float: left;
+	}
+
+/*media query*/
+	@media only screen and (max-width : 1275px) {
+		 .wrap-table {	 
+			margin-left: 50px;
+		 } 
+		 #campaign_table th:nth-last-child(n) {
+	 		min-width: 50px;
+	 	}
+	 	.recruiter-search{
+		 	padding-right: 25px;
+			
+		 }
+	}
+	@media only screen and (max-width : 1024px) {
+	    .transac_left {
+	      width: 35%;
+	    }
+	    .transac_right {
+	        width: 35%;
+	    }
+	    .currentbatchselect {
+	      width: 50%;
+	    }
+	    .recruiter-search{
+		 	padding-right: 25px;
+			
+		 }
+	}
+	@media screen and (max-width: 960px){
+	  	input#member-id {
+	  		width: 59%;
+	  	}
+	  	.display-name {
+	  		width: 25%;
+	  	}
+	  	#expiry-label {
+	  		width: 26%;
+	  	}
+	  	#selected-registry {
+	  		width: 26%;
+	  		font-size: 11px;
+	  	}
+	  	#selected-method {
+	  		width: 18%;
+	  	}
+	  	#recruter-text {
+	  		margin-left: 26px;
+	  	}
+	  	.recruiter-filed {
+	  		width: 43%;
+	  	}
+	  	.wrap-table {	 
+			margin-left: 50px;
+		} 
+		.recruiter-search{
+		 	padding-right: 25px;
+			
+		 }
+	  }
+	 @media screen and (max-width: 768px){
+	 	input#member-id {
+	 		width: 47%;
+	 	}
+	 	.display-name {
+	 		width: 19%;
+	 	}
+	 	#expiry-label {
+	 		width: 31%;
+	 	}
+	 	#selected-registry {
+	 		width: 24%;
+	 		font-size: 10px;
+	 	}
+	 	#selected-method {
+	 		width: 14%;
+	 		font-size: 11px;
+	 	}
+	 	#recruter-text {
+	 		margin-left: 15px;
+	 	}
+	 	.content-holder input.recruiter-id {
+	 		width: 65px;
+	 	}
+	 	.recruiter-filed {
+	 		width: 46%;
+	 	}
+	 	/*renewelconfirmation*/
+	 	.header-holder th {
+		font-size: 10px;
+		}
+		td {
+			padding: 3px 5px;
+			font-size: 10px;
+		}
+		#table-renewal input {	
+			width: 90%;
+		}
+		.price-row select {
+		width: 91%;
+		}
+		.recruiter-search{
+		 	padding-right: 25px;
+			
+		 }
+	}
+	 @media only screen and (max-width : 720px) {
+	    .paysource {
+	        margin-left: 0px;
+	    }
+	    .payment {
+	        margin-left: 0px;
+	    }
+	    .paymentselectbox{
+	        margin-left: 10px;
+	    }
+	    .paysourceselect, .paymentselectbox {
+	      width:80px;
+	    }
+	    .currentbatchselect {
+	      width: 40%;
+	    }
+	    .wrap-table {	 
+			margin-left: 50px;
+		 } 
+		 .recruiter-search{
+		 	width: 85%;
+		 	padding-right: 25px;
+			
+		 }
+    }
+
+

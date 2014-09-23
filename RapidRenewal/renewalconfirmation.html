@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/RapidRenewalUtility.js"></script>
+	<script type="text/javascript" src="js/master.js"></script>
+</head>
+
+<body>
+<div class="content-holder" style="max-width:1040px";>
+	<div class ="renew-confirmation">
+		<p class="renew-text">Renew Membership<span></span></p>
+		 <div id ="renew-list">
+		 	<table id="dataTable" border="1">
+		      <thead>
+		        <tr class="header-holder">  
+		          <th>Assoc</th>
+		          <th>Member ID</th>
+		          <th>Display</th>
+		          <th>Terms</th>
+		          <th>Code</th>
+		          <th>Source</th>
+		          <th>Dues</th>
+		          <th>Expire</th>
+		          <th>Check Number</th>
+		          <th>Campaign</th>
+		          <th>Price Code</th>
+		        </tr>
+		      </thead>
+		      <tbody id="table-renewal">
+		      </tbody>
+		      </table>
+		 </div>
+		 <div class="renew-content">
+				 <p class="renewing-text">Renewing <span></span> members</p>
+				 <p class="totaldues-label">Total Dues: $ <span></span></p>
+			 <div class="wrap-buttons">
+				 <input type = "button" class="bgPrimary renew-btn" value= "Renew"/>
+				 <input type = "button" class="bgGrey cancel-btn" value= "Cancel"/>
+			 </div>
+		  </div>
+	</div>
+</div>
+</body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var dues_sum= 0;
+		$( "tbody" ).scrollTop( 300 );
+	var memberId = window.location.search;
+	var dues_amount="";
+	memberId = memberId.replace("?","")	
+	$.ajax({
+		type: 'GET',
+		dataType: 'json',
+		async: false,
+		url : 'https://gims.ncga.com/WebServices/API/AssociationAPI.aspx?auth=testing&act=multiplerenewal&pak=@Criteria|'+memberId,
+		success :function(data){
+			var objjj = '';
+			var objjj = JSON.parse(localStorage.getItem("testvalue"));
+			console.log(objjj);
+			var tablecontent= "";
+			 	for (var i in data.aaData) {
+			 	 	var exp_date ='';
+            		if(data.aaData[i].ExpireDate!=null) {
+	             		exp_date = data.aaData[i].ExpireDate;	 
+	             		exp_date = exp_date.split('T')[0];	
+             		}
+			 	 	tablecontent+=  "<tr class='table-wrapper'>" + "<td>" + data.aaData[i].Association  + "</td>" + "<td class='bgPrimary id-info'>" + data.aaData[i].MemberID  + "</td>" + "<td>" +  data.aaData[i].Display + "</td>" + "<td>" +  data.aaData[i].MembershipTerms + "</td>" + "<td>" + data.aaData[i].MemberCode  + "</td>" + "<td>" + data.aaData[i].Source  + "</td>" +
+			          "<td id='rr-"+data.aaData[i].MemberID+"'>" + "<span id='due-quote-"+data.aaData[i].MemberID+"'>" + "</span"+ "</td>" + "<td class='expiry-label'>" +exp_date+ "</td>" + "<td>" +   "<input type='text' name='fname'>" + "</td>" +
+			          "<td>" +  "<input type='text' name='fname'>" + "</td>"+ "<td class='price-row'>" + "<select id='select-price'><option></option><option></option><option></option></select>" + "</td>" + "</tr>"
+        		}		
+        	var dues_sum= 0;
+			setTimeout(function(){	
+			   for (var k=0; k< objjj.length; k++) { 
+	       			$('#due-quote-'+objjj[k].t).html(objjj[k].r)
+	       			dues_sum+= parseInt(objjj[k].r);
+	       			$(".totaldues-label span").html (dues_sum);
+	       			var dues_passed = $(".totaldues-label span").html();
+					}
+			},10);
+          document.getElementById("table-renewal").innerHTML=tablecontent;
+          $(".renewing-text span").html(++i);
+          $( ".table-wrapper" ).css( "background-color", "#ffffff" ); 
+		},
+	})
+	$(".renew-btn").click(function(){
+		var dues_passed = $(".totaldues-label span").html();
+	 	 location.href = "transaction_pro.html?"+dues_passed;
+	}) 	
+})	
+</script>
+ 
+</html>

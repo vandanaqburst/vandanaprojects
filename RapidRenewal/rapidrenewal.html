@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/RapidRenewalUtility.js"></script>
+	<script type="text/javascript" src="js/master.js"></script>
+</head>
+<body>
+	
+<div class="content-holder">
+	<div class ="renew-membership">
+	<p class="renew-text">Renew Membership<span></span></p>
+		<div class="membership-info">
+				<form>
+					<label>Enter MemberID:</label>
+					<input type='text' id="member-id"name="MemberiD"/>
+					<input type="button" value="Cancel" class="cancel cGray"/>
+					<input type="button" value="Search" class="search bgPrimary" />
+					<p class="error">Enter a valid Member-id</p>
+				</form>
+
+			<div class="member-details" id="member-details" >	  
+			</div>
+
+			<div class="renew-section">
+				<p class="renewing-text">Renewing <span></span> members</p>
+				<label>Current Batch:</label>
+				<select id="batch-selection" class="selected-batch">
+				  <option value=""></option>
+				  <option value=""></option>
+				  <option value=""></option>
+				  <option value=""></option>
+				</select>
+				<input type="button" value="Confirm" class="confirm cGray">
+				<input type="button" value="Renew" class="renew bgPrimary">
+			</div>
+			<input type="button" value="Close" class="close cGray"/>
+		</div>
+	</div>		
+</div>
+ 
+</body>
+</html>

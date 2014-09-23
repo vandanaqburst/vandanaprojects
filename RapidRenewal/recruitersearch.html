@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<head>
+	<title>NCGA</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"> 
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/master.js"></script>
+
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
+
+</head>
+<script type="text/javascript">
+    $(document).ready(function() {   
+        $("#contact_search").click(function(){
+        $("#box").animate({width: 'toggle'});
+        })   
+    });    
+</script>
+<body>
+<div class="recruiter-search">
+    <p class="renew-text">Recruiter Search</p>
+        <div class="UserWrapper">
+            <div id="holder">
+                <div id="box">
+                    <form>
+                    <p>Contact Search</p>
+                    
+                    <div class="scroll_form">
+                        <label>MemberId:</label><input type="text" id="contact_memid"/>
+                        <label>First Name:</label><input type="text"id="contact_firstname"/>
+                        <label>Last Name:</label><input type="text"id="contact_lastname"/>
+                        <label>Business:</label><input type="text"id="contact_business"/>
+                        <label>Address:</label><input type="text"id="contact_address"/>
+                        <label>State:</label><select><option></option></select>
+                        <label>City:</label><input type="text" id="contact_city"/>
+                        <label>Pincode:</label><input type="text" id="contact_pincode"/>
+                        <label>Email:</label><input type="text" id="contact_email"/>
+                        <label>Phone:</label><input type="text" id="contact_phone"/>
+                        <label>Association:</label><select><option></option></select>
+                    </div>
+                    <div class="form_button">
+                        <input type="button" value="Search" id="contact-search">
+                        <input type="button" value="Clear" id="clear-search">
+                    </div>
+                    </form>
+                </div>
+                    <div id="contact_search">
+                    <p>CONTACT &nbsp;&nbsp;SEARCH</p>
+                    </div>
+            </div>
+
+            <div class="wrap-table">
+                <p class="found-members green-text"style="display:none;">Found<span></span> Members</p>
+                <p class="green-text search-label">Contact Search</p>
+                <div id="campaign_table_wrap">
+                    <table id="campaign_table" class="table display" cellspacing="0" width="100%">
+                        <thead>
+                                <tr>
+                                    <th style="min-width:80px;">Select</th>
+                                    <th style="min-width:75px">Assoc</th>
+                                    <th style="min-width:100px">First Name</th>
+                                    <th style="min-width:100px">Last Name</th>
+                                    <th style="min-width:100px">Bussines</th>
+                                    <th style="min-width:100px">Address</th>
+                                    <th style="min-width:100px">City</th>
+                                    <th style="min-width:50px">State</th>
+                                    <th style="min-width:50px">Postal</th>                                  
+                                </tr>
+                        </thead>
+                            <tbody>
+
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+		</div>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
