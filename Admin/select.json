@@ -1,0 +1,24 @@
+{
+   "select": [
+       {
+           "id":"committee1"
+        
+       },
+       {
+           "id":"committee2"
+
+       },
+       {
+           "id":"committee3"
+
+       },
+       {
+           "id":"committee4"
+
+       },
+       {
+           "id":"committee5"
+
+       }
+   ]
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes">
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="width" />
+<head>
+	<title>NCGA</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
+
+</head>
+<body>
+
+<div class="UserWrapper">
+		<div class="filter">
+			<div class="filterDetails">
+				<h2>Filter</h2>
+                <div class="user_selectbox">
+                    Association:
+                    <select>
+
+    				</select>
+                </div> 
+			</div>
+			<div class="filterButton">
+				<button>Apply Filter</button>
+				<button>Clear</button>
+				<button>Add</button>
+			</div>
+
+			<table id="due_table" class="table display" cellspacing="0" width="100%">
+			<thead>
+		            <tr>
+		                <th style="min-width:85px;">Assoc.</th>
+                        <th style="min-width:85px;">Term</th>
+		                <th style="min-width:85px;">Member Dues</th>
+		                <th style="min-width:85px;">Delete</th>
+		                <th style="min-width:85px;"></th>
+		            </tr>
+		        </thead>
+		        <tbody>
+          
+		        </tbody>
+		    </table>
+		</div>
+
+        <div class="Manage_User">
+            <h2>Manage Dues</h2>
+            <div class="userDetails">
+                <div class="term_select">
+                    Term: 
+                    <select>
+                               
+                    </select>
+                </div>
+                Member Dues: <input type="text" name="lastname" class="member_dues"><br>
+                National Dues: <input type="text" name="lastname" class="national_dues"><br>
+                <div class="association_select">
+                    Association:
+                    <select>
+                               
+                    </select>
+                </div>
+                <div class="userButtons">
+                <button>Save</button>
+                <button>Cancel</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<div id="hidden-div" style="display: none;">
+<div class="pagination-number-wrapper">
+	<div><span>Page&nbsp;</span><input type="text" name="currPage"/><span>&nbsp;of&nbsp;</span><span class="totalPage"></span></div>
+</div>
+</div>
+
+
+
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

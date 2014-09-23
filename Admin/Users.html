@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes">
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="width" />
+<head>
+	<title>NCGA</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
+
+</head>
+<body>
+
+<div class="UserWrapper">
+		<div class="filter">
+			<div class="filterDetails">
+				<h2>Filter</h2>
+                <div class="user_selectbox">
+                    Association:
+                    <select>
+
+    				</select>
+                </div>
+                Last name/User ID: <input type="text" name="lastname">  
+			</div>
+			<div class="filterButton">
+				<button>Apply Filter</button>
+				<button>Clear</button>
+				<button>Add</button>
+			</div>
+
+			<table id="user_table" class="table display" cellspacing="0" width="100%">
+			<thead>
+		            <tr>
+		                <th style="min-width:65px;">User Id</th>
+                        <th style="min-width:65px;">Password</th>
+		                <th style="min-width:65px;">First Name</th>
+		                <th style="min-width:65px;">Last Name</th>
+		                <th style="min-width:65px;">Edit</th>
+		                <th style="min-width:65px;"></th>
+		            </tr>
+		        </thead>
+		        <tbody>
+
+		        </tbody>
+		    </table>
+		</div>
+
+        <div class="Manage_User">
+            <h2>Manage User</h2>
+            <div class="userDetails">
+                User ID: <input type="text" name="lastname" class="userId"><br>
+                Password: <input type="text" name="lastname" class="passWord"><br>
+                First name: <input type="text" name="lastname" class="firstName"><br>
+                Last name: <input type="text" name="lastname" class="lastName"><br>
+                Email: <input type="text" name="lastname" class="email"><br>
+                <div class="roleuser_selectbox">
+                    Role: 
+                    <select>
+        
+                    </select>
+                </div>
+                <div class="managuser_selectbox">
+                    Association: 
+                    <select>
+
+                    </select>
+                </div>
+                <div class="userButtons">
+                <input type="checkbox" name="disable" class="disable">Disable<br>
+                <button>Save</button>
+                <button>Cancel</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<div id="hidden-div" style="display: none;">
+<div class="pagination-number-wrapper">
+	<div><span>Page&nbsp;</span><input type="text" name="currPage"/><span>&nbsp;of&nbsp;</span><span class="totalPage"></span></div>
+</div>
+</div>
+
+
+
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
